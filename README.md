@@ -172,23 +172,36 @@ learn vi/vim editor we can insert anything in the file then we can quit by click
 
 
 Now Login Related
+
 * SSH is used to connect our computer to an EC2 instance through port 22. Usually, we can also change the port if needed
+
 * SSH key (.pem) is a digital password used to securely connect your computer to an EC2 instance. The private key stays on your computer, and the public key is on the EC2. Only matching keys allow connection.
 
 
+
 Disk Usage:-
+
 df (Tell us how much space is free or use in the harddisk/partition of our system)
+
 du (It tells about the space of the directory or file)
+
 
 ls -a (Give the list of hidden folders)
 
+
 Processes:-
 ps (Show us current running processes)
+
 top (Show all the processes)
+
 kill (stops (terminates) a running process) if not terminates then forced kill by kill -9 pid
+
 fuser filename (It tells which processes are using a file.)
+
 nohup (It runs a command in the background and keeps it running even if the terminal or SSH session is closed.)
+
 free (It tells how much RAM is free or used)
+
 vmstat (It shows virtual memory, CPU, swap, I/O, and process statistics for system performance monitoring)
 
 
