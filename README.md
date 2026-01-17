@@ -155,3 +155,41 @@ scp file.txt user@remote_host:/home/user/
 
 
 
+hardlink(if change in the original file that will also reflect in softlink and if delete the original then the hardlink will work perfectly)
+
+softlink (if change in the original file that will also reflect in softlink and if delete the original then the softlink also not work)
+
+cut -b 1 file.txt (Give us the data in number of bytes we want)
+
+tee:-
+
+echo 'hello' | tee file.txt (it will aslo print hello on the terminal and save it to file also)
+
+sort (It arranges the lines of a file in order, comparing characters from left to right, starting with the first character of each line)
+
+learn vi/vim editor we can insert anything in the file then we can quit by clicking on esc key then write :wq
+
+
+
+Now Login Related
+* SSH is used to connect our computer to an EC2 instance through port 22. Usually, we can also change the port if needed
+* SSH key (.pem) is a digital password used to securely connect your computer to an EC2 instance. The private key stays on your computer, and the public key is on the EC2. Only matching keys allow connection.
+
+
+Disk Usage:-
+df (Tell us how much space is free or use in the harddisk/partition of our system)
+du (It tells about the space of the directory or file)
+
+ls -a (Give the list of hidden folders)
+
+Processes:-
+ps (Show us current running processes)
+top (Show all the processes)
+kill (stops (terminates) a running process) if not terminates then forced kill by kill -9 pid
+fuser filename (It tells which processes are using a file.)
+nohup (It runs a command in the background and keeps it running even if the terminal or SSH session is closed.)
+free (It tells how much RAM is free or used)
+vmstat (It shows virtual memory, CPU, swap, I/O, and process statistics for system performance monitoring)
+
+
+
