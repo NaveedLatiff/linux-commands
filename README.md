@@ -205,4 +205,69 @@ free (It tells how much RAM is free or used)
 vmstat (It shows virtual memory, CPU, swap, I/O, and process statistics for system performance monitoring)
 
 
+User and Files Management
+
+
+*System Level Commands
+
+uname (shows the os name)
+
+uptime (Shows how long the system has been running and how many users are currently active)
+
+date
+
+who (show active users with their activity),whoami (show a current username) 
+
+which (shows the path of the executable file)
+
+id (it shows current user  UID, GID and groups)
+
+sudo (we get the temporary administrative rights(root) to run a command)
+
+shutdown (safely turns off or restarts the system, optionally at a scheduled time)
+
+reboot (restart the system immediately)
+
+apt (used to install, update, upgrade, and remove software for debian/ubuntu)
+
+yum (same like apt but for linux distribution(Red Hat/CentOS/Fedora))
+
+dnf (same like apt but for Red Hat/CentOS/Fedora)
+
+pacman (for Arch Linux / Manjaro)
+
+portage (for Gentoo Linux)
+
+
+
+User & Group Management system
+
+useradd:-sudo useradd -m ahmed (creates a new user and automatically makes a home directory for them)
+
+passwd(sudo passwd ahmed)
+
+switch to ahmed (su ahmed)
+
+exit (to comeback to ubuntu)
+
+cat /etc/passwd (give the list of all user)
+
+userdel (sudo userdel ahmed)
+
+
+Group:-
+
+cat /etc/group (list all the groups with its member)
+
+To make a group (sudo groupadd it)
+
+To add single user to group (sudo gpasswd -a ahmed it)
+
+To add multiple user at a single time (sudo gpasswd -M ahmed,ali,murtuza)
+
+To remove user (sudo gpasswd -d ahmed sudo)
+
+To delete a group (sudo groupdel it) 
+
+
 
