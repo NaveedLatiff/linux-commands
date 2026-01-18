@@ -270,4 +270,40 @@ To remove user (sudo gpasswd -d ahmed sudo)
 To delete a group (sudo groupdel it) 
 
 
+file permission commands:-
+
+
+chmod 777 devops (Give rwx permission to user and group and other user)
+
+ls -l (It shows files and directories in long format with permissions, owner, group, size, and date)
+
+umask (Bydefault permission for nwely created file/directory)
+
+chown naveed folder/filename (change ownership)
+
+chgrp groupname folder/filename   (change group ownership)
+
+
+
+compression command:-
+
+zip -r devops.zip devops
+
+unzip devops.zip
+
+gzip compresses a single file not a directory and gunzip decompresses it
+
+tar -cvzf devops.tar.gz devops (compress the file/folder but file extension is .tar.gz)
+
+tar -xvzf devops.tar.gz (to unzip)
+
+
+file transfer commands:-
+
+scp (copy files from local to remote or remote to local)
+
+rsync (it is used to synchronize or transfer files and directories between local and remote systems efficiently  just  copying the differences)
+
+ 
+
 
