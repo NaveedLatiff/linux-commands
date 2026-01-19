@@ -304,6 +304,65 @@ scp (copy files from local to remote or remote to local)
 
 rsync (it is used to synchronize or transfer files and directories between local and remote systems efficiently  just  copying the differences)
 
+
+Networking Commands:-
+
+
+ping  (used to check if servers or network devices are online, measure latency, and troubleshoot connectivity issues)
+
+netstat (shows active network connections, listening ports, and which process is using which port)
+
+ifconfig (shows network interfaces, IP addresses, netmask, broadcast, and data transmitted/received, used for monitoring and troubleshooting network)
+
+traceroute (shows the path and hops(steps) a packet(request/message) takes to reach a server and the latency at each hop)
+
+tracepath (it checks the path(like traceroute do)) along with the max packet size (MTU))
+
+mtr (traceroute + ping)
+
+nslookup (is used to find the IP address of a domain or the domain name of an IP, helping check DNS and network issues)
+
+telnet (it is a protocol to connect to a remote server over a network (usually port 23) for testing or command access, but it is insecure)
+
+hostname
+
+ip (shows and manages network interfaces, IP addresses, and routes on the system)
+
+iwconfig (shows the status and settings of wireless network interfaces like Wi-Fi, including network name, signal strength, and frequency)
+
+ss (same like netstat) 
+
+dig abc.com (is used to query DNS and get detailed information about a domain’s IP address and DNS records)
+
+whois (tells the ownership and registration details of a domain or IP address)
+
+nc (used to test ports, send/receive data, and check connectivity between systems)
+
+arp (maps IP addresses to MAC addresses so that computers can send data to the correct device on a local network)
+
+ifplugstatus (shows the status of all network interfaces, whether they are connected (working) or disconnected)
+
+curl -X method api | jq (used to send request to APIs and jq give the data in formatted way)
+
+wget link-address (to download files or content from internet)
+
+watch (runs a command repeatedly and shows its output at regular intervals it is useful for live monitoring)
+
+nmap (scans networks to detect open ports, running services, and operating systems for security and troubleshooting)
+
+iptables (it is a firewall tool that controls which network traffic is allowed or blocked on a Linux system)
+
+route  (shows or manages the paths (routes) packets take to reach different networks or hosts)
+
+
+
+ 
+
+
+
+
+
+
  
 
 
