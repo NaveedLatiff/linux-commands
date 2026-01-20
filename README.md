@@ -355,6 +355,84 @@ iptables (it is a firewall tool that controls which network traffic is allowed o
 route  (shows or manages the paths (routes) packets take to reach different networks or hosts)
 
 
+TEXT PROCESSING TOOLS:-
+
+
+___AWK___  For structured Data
+
+
+awk '{print $1,$2}' file.txt     
+                                   
+awk '$2 >=21 {print $1}' file.txt   
+
+$1 → first column
+
+$NF → last column
+
+$(NF-1) → second last column            
+
+
+**Remember AWK process line by line so every line has its own NF (NF means columns of the line)**
+
+-sh-4.2$ awk 'NR>0 {print $0}' file.txt  ---$0 print all columns                                    
+
+NR->Number of Row
+
+awk '/CS/ {print$0}' file.txt  
+
+awk '{i=1; while(i<=NF){print $i; i++}}' file.txt
+
+awk '{for(i=1;i<=NF;i++){print $i}}' file.txt      
+
+BEGIN runs after file start
+
+END runs after file end
+
+awk 'BEGIN {print "NAME AGE FIELD"} {print $0} END {print "ALL DONE..."}'  file.txt
+
+awk 'NF>0 { $2 = $2 + 5; print $0 }' file.txt     
+                  
+
+**AWK have also builtin function like toupper,tolower etc**
+
+
+awk -F',' '{print $1, $2}' file.txt   -F means tells the awk that the input is seperated by , in the file 
+
+-sh-4.2$ awk 'BEGIN{OFS=":"} {print $1,$2}' file.txt  -->OFS is a output seperator
+
+awk '{print substr($4,4,10)}' file.txt   --> start from 4 character and the length will be 10
+
+                       
+
+__SED__   For unstructured Data     -->Works directly on lines, doesn’t care about columns
+
+
+For replace      sed 's/CS/MED/g' file.txt   -->g will replace all occurance
+
+Delete Line    -sh-4.2$ sed '/IT/d' file.txt     Delete specific line    sed '2d' file.txt
+
+sed -n 'p' file.txt    -n-> suppress automatic printing  
+
+sed -n -e '1p' -e '3p' file.txt   -e allow multiples commands
+
+sed '1a\Naveed 20 CS ' file.txt    a for append after the line or i for append before the line
+
+
+__GREP__   specialized, super fast for just searching/filtering lines
+
+grep -i 'iT' file.txt   -i for case sensitive
+
+grep -c 'IT' file.txt   --count matching lines means how many lines contain IT
+
+grep -v 'IT' file.txt     -v for all lines not containing IT
+
+grep -r 'ERROR' /var/log/  ---search in all files that contains err in a directory
+
+grep -e 'IT' -e 'CS' file.txt      -e for multiple commands
+
+grep -n '' file.txt                                                 
+ 
+
 
  
 
